@@ -27,7 +27,7 @@
 🖥️Versões Desktop e mobile: 
 <br>
 <br>
-<img src="  https://photos.app.goo.gl/v7PJvk51kymiDG1j8   "/>
+<img src="https://photos.app.goo.gl/v7PJvk51kymiDG1j8"/>
 
 
 
