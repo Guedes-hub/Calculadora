@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+    width: 300px;
+
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 15px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d5d5d5;
+}
+
+button:active {
+    background-color: #cccccc;  
+}
+
+button:nth-child(4n) {
+    background-color: #ffa726;
+    color: white;
+}
+
+button:hover:nth-child(4n) {
+    background-color: #fb8c00;
+}
+
+button:active:nth-child(4n) {
+    background-color: #f57c00;
+}
+
+#guedes {
+    background-color: #4caf50;
+    color: white;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+}
+
+
+
+    </style>
+</head>
+
+
+
+<body>
+    <div class="calculator">
+    <input type="text" id="display" disabled />
+    <div class="buttons">
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendValue('(')">(</button>
+        <button onclick="appendValue(')')">)</button>
+        <button onclick="appendValue('/')">÷</button>
+
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('*')">x</button>
+
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('-')">-</button>
+
+        
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button onclick="appendValue('+')">+</button>
+
+        
+        <button onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+        <button id="guedes" onclick="guedesFunction()">Guedes</button>
+
+         </div>
+  </div>
+    
+
+    <script>
+
+
+        let display = document.getElementById('display')// pega o elemento do display
+
+        function appendValue(value) {  //função para adicionar valor ao display
+            display.value += value; //pega o valor do botão e adiciona ao display 
+        }
+
+        function clearDisplay() { //função para limpar o display
+            display.value = '';
+
+        }
+
+
+        function calculateResult() { //função para calcular o resultado
+            try { //tente executar esse código
+                display.value = eval(display.value); //eval interpreta o que está na string e executa como código
+            } catch (error) { // se der erro no try, faça isso
+                display.value = 'Error';
+            }
+        }
+        
+        function guedesFunction(){ //função para o botão guedes
+            display.value = 'Seu dev favorito!';//muda o display para essa frase
+        }
+
+    </script>
+</body>
+</html>
