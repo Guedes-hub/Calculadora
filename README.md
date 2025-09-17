@@ -27,5 +27,6 @@
 🖥️Versões Desktop e mobile: 
 <br>
 <br>
+https://chatgpt.com/s/m_68cb1135786481918d3bc9ab7a7e0271
 
 
