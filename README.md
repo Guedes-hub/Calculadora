@@ -20,7 +20,7 @@
 
 🚀Acesse o projeto web: https://guedes-hub.github.io/Calculadora/
 <br>
-🗂️Arquivos utilizados: 
+🗂️Arquivos utilizados: https://github.com/Guedes-hub/Calculadora/blob/main/docs%2Findex.html
 <br>
 <br>
 <br>
