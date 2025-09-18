@@ -1,4 +1,5 @@
-<h1>🖩Calculadora
+<h1>🖩Calculadora<img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/132f3371-566c-40ad-9de5-4d02fd1636a6" />
+
 </h1>
 
 
