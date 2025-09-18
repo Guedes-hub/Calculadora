@@ -1,4 +1,4 @@
-<h1>📊Calculadora
+<h1>🖩Calculadora
 </h1>
 
 
@@ -27,7 +27,9 @@
 🖥️Versões Desktop e mobile: 
 <br>
 <br>
-<img src="https://photos.app.goo.gl/v7PJvk51kymiDG1j8"/>
+![Screenshot_20250917_182833_Gallery](https://github.com/user-attachments/assets/a4cef747-23e2-4431-b0a3-c0d8a9ac4e22)
+
+
 
 
 
